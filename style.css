@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 25% 1fr 25%; /* ширина колонок */
+    background-color: black;
+    color: white;
+}
+
+.logo {
+    padding: 8vw;
+    padding-bottom: 0;
+}
+
+.logo img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none; /* убирает метки */
+}
+
+.links {
+    padding: 5vw; /* внутренний отступ */
+    padding-top: 0;
+    padding-bottom: 0;
+
+    display: flex;
+    flex-wrap: wrap; /* перенос на новую строку */
+    justify-content: center; /* выравнивание по центру */
+}
+
+.links li {
+    margin: 1vw; /* внешний отступ */
+    font-size: 1.15rem;
+    color: rgb(65, 255, 125);
+}
+
+.links li.current-link {
+    color: white;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-end; /* выравнивание по левому краю */
+    flex-direction: column; /* выравнивание по вертикали */
+    gap: 1vw; /* внутренний отступ */
+    align-items: center; /* выравнивание по центру */
+}
+
+.info h3 {
+    margin: 0;
+}
+
+.phone {
+    display: flex;
+    flex-direction: row; /* выравнивание по горизонтали */
+    flex-wrap: nowrap; /* не перенос на новую строку */
+    gap: 1vw; /* внутренний отступ */
+}
+
+.info a {
+    color: white;
+}
+
+.pushkin-card {
+    display: flex;
+    flex-direction: row; /* выравнивание по горизонтали */
+    justify-content: flex-end; /* выравнивание по правому краю */
+}
+
+.pushkin-card img {
+    width: 100%;
+}
+
+main {
+    padding: 10vw;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5vw;
+}
+
+footer div {
+    align-items: center;
+}
+
+.address {
+    display: flex;
+    flex-direction: row; /* выравнивание по горизонтали */
+    gap: 3vw;
+}
+
+.address div {
+    display: flex;
+    flex-direction: column; /* выравнивание по вертикали */
+    gap: 0.2vw;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row; /* выравнивание по горизонтали */
+    justify-content: space-between;
+}
