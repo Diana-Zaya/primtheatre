@@ -36,6 +36,7 @@ ul {
     margin: 1vw; /* внешний отступ */
     font-size: 1.15rem;
     color: rgb(65, 255, 125);
+    text-align: center;
 }
 
 .links li.current-link {
@@ -44,10 +45,11 @@ ul {
 
 .info {
     display: flex;
-    justify-content: flex-end; /* выравнивание по левому краю */
+    justify-content: space-between; /* создание максимальных отступов */
     flex-direction: column; /* выравнивание по вертикали */
     gap: 1vw; /* внутренний отступ */
     align-items: center; /* выравнивание по центру */
+    padding-top: 1vw;
 }
 
 .info h3 {
@@ -93,18 +95,15 @@ footer {
     color: white;
     
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 5vw;
-}
-
-footer div {
-    align-items: center;
 }
 
 .address {
     display: flex;
     flex-direction: row; /* выравнивание по горизонтали */
     gap: 3vw;
+    align-items: center; /* выравнивание по центру по вертикали */
 }
 
 .address div {
@@ -113,14 +112,56 @@ footer div {
     gap: 0.2vw;
 }
 
+.footer-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5vw;
+}
+
 .contacts {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer-links {
     display: flex;
     flex-direction: row; /* выравнивание по горизонтали */
     justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+    .info {
+        justify-content: flex-end;
+        gap: 5vw;
+    }
+}
+
+@media (max-width: 700px) {
+    footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        padding: 40vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-info {
+        grid-template-columns: 1fr;
+    }
+
+    .contacts {
+        flex-direction: row;
+    }
 }
