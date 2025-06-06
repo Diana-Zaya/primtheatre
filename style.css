@@ -1,5 +1,11 @@
+@font-face { /* подключение шрифтов */
+    font-family: "Acumin Pro";
+    src: url("fonts/acumin-pro\(VER\).ttf");
+}
+
 body {
     margin: 0;
+    font-family: "Acumin Pro"; /* шрифт */
 }
 
 header {
@@ -7,6 +13,8 @@ header {
     grid-template-columns: 25% 1fr 25%; /* ширина колонок */
     background-color: black;
     color: white;
+
+    border-bottom: 0.3rem solid rgb(65, 255, 125); /* рамка внизу */
 }
 
 .logo {
@@ -95,8 +103,10 @@ footer {
     color: white;
     
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     padding: 5vw;
+
+    border-top: 0.3rem solid rgb(65, 255, 125); /* рамка вверху */
 }
 
 .address {
